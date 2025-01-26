@@ -1,0 +1,27 @@
+﻿<Window x:Class="KlinikaGUI.WizytaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KlinikaGUI"
+        mc:Ignorable="d"
+        Height="620" Width="820"
+        WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="LightBlue" Offset="0"/>
+            <GradientStop Color="LightGray" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Label Content="Wizyty" HorizontalAlignment="Center" Height="60" Margin="0,10,0,0" VerticalAlignment="Top" Width="780" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="30"/>
+        <ListBox Name="ListaWizyty" HorizontalAlignment="Left" Height="300" Margin="10,140,0,0" VerticalAlignment="Top" Width="780" FontSize="20" Background="AliceBlue"/>
+        <Button x:Name="Dodaj" Content="Dodaj" HorizontalAlignment="Left" Height="60" Margin="575,75,0,0" VerticalAlignment="Top" Width="215" Click="DodajWizyta" FontSize="24" Background="AliceBlue"/>
+        <Label Content="Lista wizyt" HorizontalAlignment="Left" Height="60" Margin="10,75,0,0" VerticalAlignment="Top" Width="340" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="24"/>
+        <Button x:Name="Wroc" Content="Wróć" HorizontalAlignment="Left" Height="60" Margin="10,445,0,0" VerticalAlignment="Top" Width="350" Click="WrocWizyta" FontSize="24" Background="AliceBlue"/>
+        <Button x:Name="Usun" Content="Usuń" HorizontalAlignment="Left" Height="60" Margin="355,75,0,0" VerticalAlignment="Top" Width="215" Click="UsunWizyta" FontSize="24" Background="AliceBlue"/>
+        <Button x:Name="Posortuj" Content="Posortuj" HorizontalAlignment="Left" Height="60" Margin="575,445,0,0" VerticalAlignment="Top" Width="215" Click="PosortujWizyta" FontSize="24" Background="AliceBlue"/>
+        <Image Margin="362,445,248,10" Source="/Obrazy/care.png" Stretch="Uniform"/>
+
+    </Grid>
+</Window>

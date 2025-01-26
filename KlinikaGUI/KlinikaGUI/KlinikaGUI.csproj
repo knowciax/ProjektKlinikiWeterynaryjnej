@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Dzwieki\success.mp3" />
+    <None Remove="Dzwieki\success.wav" />
+    <None Remove="Dzwieki\sukces.wav" />
+    <None Remove="Obrazy\animal.png" />
+    <None Remove="Obrazy\animals.png" />
+    <None Remove="Obrazy\care.png" />
+    <None Remove="Obrazy\check.png" />
+    <None Remove="Obrazy\logo.jpg" />
+    <None Remove="Obrazy\logo.png" />
+    <None Remove="Obrazy\minus.png" />
+    <None Remove="Obrazy\veterinarian1.png" />
+    <None Remove="Obrazy\veterinary2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="KlinikaGUI.csproj" />
+    <None Include="KlinikaGUI.csproj.user" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="App.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Dzwieki\sukces.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Reference Include="ProjektKlinikiWeterynaryjnej">
+      <HintPath>..\..\ProjektKlinikiWeterynaryjnej\bin\Debug\net6.0\ProjektKlinikiWeterynaryjnej.dll</HintPath>
+    </Reference>
+    <Resource Include="Obrazy\animal.png" />
+    <Resource Include="Obrazy\animals.png" />
+    <Resource Include="Obrazy\care.png" />
+    <Resource Include="Obrazy\check.png" />
+    <Resource Include="Obrazy\logo.png" />
+    <Resource Include="Obrazy\minus.png" />
+    <Resource Include="Obrazy\veterinarian1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Obrazy\veterinary2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>

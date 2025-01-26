@@ -1,0 +1,26 @@
+﻿<Window x:Class="KlinikaGUI.ZwierzeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KlinikaGUI"
+        mc:Ignorable="d"
+        Height="620" Width="820"
+        WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="LightBlue" Offset="0"/>
+            <GradientStop Color="LightGray" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Label Content="Zwierzęta" HorizontalAlignment="Center" Height="60" Margin="0,10,0,0" VerticalAlignment="Top" Width="780" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="30"/>
+        <ListBox Name="ListaZwierzeta" HorizontalAlignment="Left" Height="300" Margin="10,140,0,0" VerticalAlignment="Top" Width="780" FontSize="20" Background="AliceBlue"/>
+        <Button x:Name="Dodaj" Content="Dodaj" HorizontalAlignment="Left" Height="60" Margin="440,75,0,0" VerticalAlignment="Top" Width="350" Click="DodajZwierze" FontSize="24" Background="AliceBlue"/>
+        <Label Content="Lista zwierząt" HorizontalAlignment="Left" Height="60" Margin="10,75,0,0" VerticalAlignment="Top" Width="425" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24"/>
+        <Button x:Name="Wroc" Content="Wróć" HorizontalAlignment="Left" Height="60" Margin="10,445,0,0" VerticalAlignment="Top" Width="350" Click="WrocZwierze" FontSize="24" Background="AliceBlue"/>
+        <Image Margin="371,445,241,10" Source="/Obrazy/animals.png" Stretch="Uniform"/>
+        <Image Margin="577,445,49,10" Source="/Obrazy/animal.png" Stretch="Uniform"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,28 @@
+﻿<Window x:Class="KlinikaGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KlinikaGUI"
+        mc:Ignorable="d"
+        Height="400" Width="820"
+        WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="LightBlue" Offset="0"/>
+            <GradientStop Color="LightGray" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Label Content="Klinika Weterynaryjna" HorizontalAlignment="Center" Height="60" Margin="0,10,0,0" VerticalAlignment="Top" Width="780" FontSize="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Label Content="Wizyty" HorizontalAlignment="Left" Height="60" Margin="10,84,0,0" VerticalAlignment="Top" Width="425" FontSize="24" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+        <Button Name="PrzejdzWizyta" Content="Przejdź" HorizontalAlignment="Left" Height="60" Margin="440,84,0,0" FontSize="24" VerticalAlignment="Top" Width="350" Click="PrzejdzWizytyMain" Background="AliceBlue"/>
+        <Label Content="Lekarze" HorizontalAlignment="Left" Height="60" Margin="10,149,0,0" VerticalAlignment="Top" Width="425" FontSize="24" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+        <Button x:Name="PrzejdzLekarz" Content="Przejdź" HorizontalAlignment="Left" Height="60" Margin="440,149,0,0" FontSize="24" VerticalAlignment="Top" Width="350" Click="PrzejdzLekarzeMain" Background="AliceBlue"/>
+        <Label Content="Zwierzęta" HorizontalAlignment="Left" Height="60" Margin="10,214,0,0" VerticalAlignment="Top" Width="425" FontSize="24" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+        <Button x:Name="PrzejdzZwierze" Content="Przejdź" HorizontalAlignment="Left" Height="60" Margin="440,214,0,0" FontSize="24" VerticalAlignment="Top" Width="350" Click="PrzejdzZwierzetaMain" Background="AliceBlue"/>
+        <Button x:Name="Wyjdz" Content="Wyjdź" HorizontalAlignment="Left" Height="60" Margin="10,279,0,0" VerticalAlignment="Top" Width="425" FontSize="24" Click="WyjdzMain" Background="AliceBlue"/>
+        <Image Margin="20,122,500,148" Source="/Obrazy/logo.png" Stretch="Fill"/>
+
+    </Grid>
+</Window>
